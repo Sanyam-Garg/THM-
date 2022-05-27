@@ -1,0 +1,28 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.24.7
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/08/23 15:15:40 Starting gobuster in directory enumeration mode
+===============================================================
+/images               (Status: 301) [Size: 233] [--> http://10.10.24.7/images/]
+/media                (Status: 301) [Size: 232] [--> http://10.10.24.7/media/] 
+/templates            (Status: 301) [Size: 236] [--> http://10.10.24.7/templates/]
+/modules              (Status: 301) [Size: 234] [--> http://10.10.24.7/modules/]  
+/bin                  (Status: 301) [Size: 230] [--> http://10.10.24.7/bin/]      
+/plugins              (Status: 301) [Size: 234] [--> http://10.10.24.7/plugins/]  
+/includes             (Status: 301) [Size: 235] [--> http://10.10.24.7/includes/] 
+/language             (Status: 301) [Size: 235] [--> http://10.10.24.7/language/] 
+/components           (Status: 301) [Size: 237] [--> http://10.10.24.7/components/]
+/cache                (Status: 301) [Size: 232] [--> http://10.10.24.7/cache/]     
+/libraries            (Status: 301) [Size: 236] [--> http://10.10.24.7/libraries/] 
+/tmp                  (Status: 301) [Size: 230] [--> http://10.10.24.7/tmp/]       
+/layouts              (Status: 301) [Size: 234] [--> http://10.10.24.7/layouts/]   
+/administrator        (Status: 301) [Size: 240] [--> http://10.10.24.7/administrator/]

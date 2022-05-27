@@ -1,0 +1,15 @@
+Found ssh on port 4567
+
+No clue so bruteforced sams password to be chocolate
+
+Find where is flag2: find / -name flag2.txt 2>/dev/null
+At /home/ubuntu/flag2.txtls 
+Can cd into the directory but cant read the file.
+
+Now we know cronjobs is involved.
+Look at /etc/cron*..... Not found something useful.
+
+List all files owned by ubuntu
+Found "clean_up.sh"
+Removes temporary files.... Possibly executes regularly.....
+

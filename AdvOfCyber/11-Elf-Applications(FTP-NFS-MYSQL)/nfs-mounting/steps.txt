@@ -1,0 +1,19 @@
+NFS
+
+NFS is a network file share that runs on both TCP and UDP on port 111 and 2049. Like FTP, NFS is used to transfer files. They are still quite different. While FTP uses a client-server model to communicate, NFS acts as a distributed system. This means that a user can access a share(think of this as a directory) on their own file system. While FTP uses username and password to manage authentication and authorization to files, NFS uses the linux permission system to manage these things. Common misconfigurations include:
+Publicly accessible shares: some administrators may expose NFS shares to anyone. An attacker could mount the share onto their file system and access files on the share.
+When the permissions a file are different, an attacker would have to change their user ID/group ID to match the permissions of the file.
+
+The first step would be enumerating a system to check if NFS is running. Once NFS is running, we would check to see if any shares are available. This is done using this command 
+showmount -e ip-address
+This command shows all the shares exported by NFS. 
+
+If this command outputs any shares, you can try mount the shares on to your file system
+mount ip:/file/path /local/file/path
+Note that this command would require sudo permissions 
+
+Once it is successfully mounted, you can browse to the location on your file system and try access the files. After completing this, you need to unmount the file system using the command:
+umount /local/file/path
+Note that this command would require sudo permissions
+
+Is this realistic: it is! Like FTP, NFS is still used by big organisations in their legacy environments. Note that NFS has had version improvements that improve some default security weaknesses.

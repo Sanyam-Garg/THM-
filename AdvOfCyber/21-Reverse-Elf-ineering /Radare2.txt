@@ -1,0 +1,13 @@
+Time to see what’s happening under the hood! Run the command
+        r2 -d ./file1
+This will open the binary in debugging mode.
+
+Analyse: aa
+Get all functions: afl
+                    Find main function..... afl | grep main
+                    Print Disassembly function: pdf @main
+
+db memory_address: set breakpoint
+ds: execute only the next instruction
+px @ rbp------...: analyse that memory address
+dr: show registers.                    

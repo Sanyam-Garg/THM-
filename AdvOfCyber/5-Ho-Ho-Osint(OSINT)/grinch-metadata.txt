@@ -1,0 +1,25 @@
+ExifTool Version Number         : 12.16
+File Name                       : thegrinch.jpg
+Directory                       : .
+File Size                       : 69 KiB
+File Modification Date/Time     : 2021:07:16 21:35:19+05:30
+File Access Date/Time           : 2021:07:16 21:36:36+05:30
+File Inode Change Date/Time     : 2021:07:16 21:36:32+05:30
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Resolution Unit                 : None
+X Resolution                    : 1
+Y Resolution                    : 1
+XMP Toolkit                     : Image::ExifTool 10.10
+Creator                         : JLolax1
+Image Width                     : 642
+Image Height                    : 429
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 642x429
+Megapixels                      : 0.275

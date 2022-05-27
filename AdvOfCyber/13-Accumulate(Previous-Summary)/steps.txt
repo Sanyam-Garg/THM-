@@ -1,0 +1,25 @@
+nmap -> http on port 80, microsoft terminal on 3389
+
+nikto -> nothing
+
+gobuster -> actual web server on /retro.
+
+Browse the website for initial access entry:
+    Comment section at http://10.10.19.44/retro/index.php/2019/12/09/zelda-hidden-fan-room/
+    Login page at http://10.10.19.44/retro/wp-login.php ---> Has weird javascript in the source...????
+        Two hidden input fields:
+            redirect_to 
+            testcookie
+    Sends request to machines localhost to redirect!! https://localhost/retro/wp-login.php?redirect_to=http%3A%2F%2F10.10.19.44%2Fretro%2Fwp-admin%2F&reauth=1
+
+Credentials found via a comment:
+    username:wade
+    password:parzival    
+    email:darkstar@darkstar7471.com
+
+Gained access using above credentials in remmina    
+
+Saw logs:
+    User trying to create "Reverse Connection Listener"...???
+    hhupd on desktop --> Google search ---> Priv Esc method!!!!
+    CVE 2019-1388

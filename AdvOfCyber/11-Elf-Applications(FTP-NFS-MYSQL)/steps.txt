@@ -1,0 +1,10 @@
+Anonymous ftp allowed on port 21
+
+Got credentials for db through ftp
+
+Connect to mysql using "mysql -u fooUser -p -h 44.55.66.77"
+
+After enumerating, found credentials:
+    admin:bestpassword
+
+Mount nfs shares, found creds.txt    

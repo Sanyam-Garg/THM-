@@ -1,0 +1,6 @@
+$6$7GS5e.yv$HqIH5MthpGWpczr3MnwDHlED8gbVSHt7ma8yxzBM8LuBReDV5e1Pu/VuRskugt1Ckul/SKGX.5PyMpzAYo3Cg/
+
+
+
+Used the following command:
+    hashcat -m 1800 -a 0 -o cracked.txt --remove crack.hash /usr/share/set/src/fasttrack/wordlist.txt

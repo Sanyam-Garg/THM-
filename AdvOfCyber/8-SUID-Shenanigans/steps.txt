@@ -1,0 +1,7 @@
+Linpeas
+
+Found that nmap and find command have SUID on user igor.
+
+Run files using find command: find flag1.txt -exec cat flag1.txt \;
+
+Found another SUID: /usr/bin/system-control

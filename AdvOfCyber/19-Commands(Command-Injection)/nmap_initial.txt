@@ -1,0 +1,76 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-03 12:03 IST
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+Initiating Ping Scan at 12:03
+Scanning 10.10.197.254 [4 ports]
+Completed Ping Scan at 12:03, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:03
+Completed Parallel DNS resolution of 1 host. at 12:03, 0.02s elapsed
+Initiating SYN Stealth Scan at 12:03
+Scanning 10.10.197.254 [1000 ports]
+Discovered open port 22/tcp on 10.10.197.254
+Discovered open port 111/tcp on 10.10.197.254
+Discovered open port 3000/tcp on 10.10.197.254
+Completed SYN Stealth Scan at 12:03, 5.28s elapsed (1000 total ports)
+Initiating Service scan at 12:03
+Scanning 3 services on 10.10.197.254
+Completed Service scan at 12:03, 11.86s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.197.254.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 7.07s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.75s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+Nmap scan report for 10.10.197.254
+Host is up, received echo-reply ttl 251 (0.18s latency).
+Scanned at 2021-08-03 12:03:14 IST for 26s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT     STATE SERVICE REASON          VERSION
+22/tcp   open  ssh     syn-ack ttl 251 OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 83:86:ab:3c:f1:3f:4c:c1:83:b9:55:95:f5:d3:4e:c6 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDX+ca5L94S3Q0OVhktyHbofT9fv91M16JTlEjnXgWBgdBlUQUIs8cbmtPdXccJQJiLKs/yiL3jerQb8DnfBYsQswAcD96RWVRECmc+7EDKBr8HjOPQLxGa9WdaOLRhm7gwAFbBA9SINWlPYRhgMts7ajX9D7HMIM1u/PSNfwwaKF/loN88bs9Rf7xNsrcgxHdQl7wIOQJY3Qldh+BqkUF3y87Qi1izF7tCcl1SUxCAOKmhVLL7t1CJf4QPV7x9YoYmVQdwnMFmmdNqDexG5cXqffv5VDRU5Bdz2a02XFTmunmxHvoHBePhltMfKzP+0qe7xjsOQpmTXQIs7coXdFe7
+|   256 f7:f7:d6:88:22:d4:52:c4:52:e9:d7:37:45:03:17:a8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGy/35Kgf7nuZWRHQV27o/crhenPef6N1ukmcGn00a7KWhHQ4mAemEZzJM3FTYAZ6FAhFPGTzXQ0WsZRM1QAHQ8=
+|   256 06:89:b7:28:d8:bf:d5:4a:f9:e1:3d:fd:9d:2b:f0:06 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFu2XLPn3Q5GSYmEleRysmXTKHOyvUunmwpaz9grix6c
+111/tcp  open  rpcbind syn-ack ttl 251 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+3000/tcp open  http    syn-ack ttl 251 Node.js (Express middleware)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 12:03
+Completed NSE at 12:03, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 26.65 seconds
+           Raw packets sent: 1263 (55.548KB) | Rcvd: 1005 (40.200KB)

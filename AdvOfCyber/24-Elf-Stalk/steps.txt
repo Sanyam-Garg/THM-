@@ -1,0 +1,7 @@
+Google how to search on elastic search API
+    http://10.10.153.170:9200/_search?q=password ---> "hey, can you access my dev account for me. My username is l33tperson and my password is 9Qs58Ol3AXkMWLxiEyUyyf"
+
+See kibana exploit---> Local File Inclusion 
+    https://github.com/mpgn/CVE-2018-17246
+
+Include /root.txt, see the output error over at the logs port.

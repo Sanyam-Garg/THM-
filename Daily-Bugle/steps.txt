@@ -1,0 +1,31 @@
+nmap
+
+gobuster
+
+inspect admin page
+
+found 4 hidden fields ......
+
+Found version at http://10.10.95.97/administrator/manifests/files/joomla.xml
+
+Found exploit, 
+    CVE:
+    2017-8917
+
+Access admin portal
+
+Setup a reverse shell. (edit index.php)
+
+Don't have access to jjameson home folder.
+
+Nothing in suid files.
+Check crontab files, /etc/crontab
+    Found every minute crontab, "user-name  command to be executed", not useful.
+    Haath pair maaro bhai.
+
+    Found public $user = 'root'; (public user here is jjameson)
+        public $password = 'nv5uz9r3ZEDzVjNu';
+
+Check for sudo permissions for jjameson user:
+    Can run /usr/bin/yum as sudo
+    Found the exploit at https://gtfobins.github.io/gtfobins/yum/

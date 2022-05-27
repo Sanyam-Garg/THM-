@@ -1,0 +1,9 @@
+Image Metadata
+
+Image metadata is text information that is pertaining to an image file, that is embedded into the file.
+
+This data includes details relevant to the image itself as well as the information about its production. For example, if you take a photo in the park, your smartphone will attach GPS location metadata to the image. Back in the day, social networks wouldn't strip an images metadata, which mean't a celebrity could take a photo at home and upload it, revealing their location.. Creepy right?
+
+Image Metadata can also include camera details, such as aperture, shutter speed and DPI.. it can also include the creator (author) or the individual taking the image.
+
+Exiftool is a free and open-source program for reading metadata on files. Lets use this program to read a photo's metadata.

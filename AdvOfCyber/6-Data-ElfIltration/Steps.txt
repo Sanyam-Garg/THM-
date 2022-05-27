@@ -1,0 +1,7 @@
+Export Data from wireshark.
+
+Crack the zip password with john or fcrackzip.
+
+Upload image on https://futureboy.us/stegano/decode.pl
+
+Filter dns queries, find odd looking request (weird address). --> Encoded!

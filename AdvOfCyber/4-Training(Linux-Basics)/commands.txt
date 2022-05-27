@@ -1,0 +1,9 @@
+q1: ls
+
+q2: cat file5
+
+q3 grep -r "password" .      # Checks recursively all files in the directory containing the string.
+
+q4: grep -r "[0-9][0-9].[0-9].[0-9].[0-9][0-9]" .     # Regex
+
+q7: search for backup /etc/shadow : find / -name shadow.bak

@@ -1,0 +1,129 @@
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 6,
+    "successful" : 6,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 201,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".kibana",
+        "_type" : "doc",
+        "_id" : "config:6.4.2",
+        "_score" : 1.0,
+        "_source" : {
+          "type" : "config",
+          "updated_at" : "2019-10-20T15:10:20.243Z",
+          "config" : {
+            "buildNum" : 18010,
+            "telemetry:optIn" : false
+          }
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "0",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "ben",
+          "receiver" : "kirsten",
+          "message" : "Android > IOS"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "14",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "susan",
+          "receiver" : "chris",
+          "message" : "i have so much goss for you!!"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "19",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "mary",
+          "receiver" : "chris",
+          "message" : "Android > IOS"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "22",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "jean",
+          "receiver" : "chris",
+          "message" : "im so happy python2 is being deprecated"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "24",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "andy",
+          "receiver" : "bob",
+          "message" : "Did any of you sign up for HackBack2 - sounds like itll be so much fun"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "25",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "mary",
+          "receiver" : "bob",
+          "message" : "i have so much goss for you!!"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "26",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "bob",
+          "receiver" : "wendy",
+          "message" : "i have so much goss for you!!"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "29",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "beth",
+          "receiver" : "mandy",
+          "message" : "omg, the huel deal is so cheap today"
+        }
+      },
+      {
+        "_index" : "messages",
+        "_type" : "_doc",
+        "_id" : "40",
+        "_score" : 1.0,
+        "_source" : {
+          "sender" : "bob",
+          "receiver" : "wendy",
+          "message" : "Android > IOS"
+        }
+      }
+    ]
+  }
+}

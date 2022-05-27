@@ -1,0 +1,14 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-26 13:00 IST
+Nmap scan report for 10.10.163.222
+Host is up (0.16s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+80/tcp  open  http    Apache Tomcat/Coyote JSP engine 1.1
+111/tcp open  rpcbind 2-4 (RPC #100000)
+Aggressive OS guesses: Linux 3.1 (91%), Linux 3.2 (91%), Linux 3.10 - 3.13 (90%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (90%), ASUS RT-N56U WAP (Linux 3.4) (89%), Linux 3.16 (89%), Adtran 424RG FTTH gateway (89%), Linux 2.6.32 (89%), Linux 2.6.39 - 3.2 (89%), Linux 3.1 - 3.2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.96 seconds
